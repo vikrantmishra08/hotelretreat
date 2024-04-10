@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
+    <title>Golden-Hotel-Free-HTML5-Bootstrap-Web-Template</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/slider-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider-custom.css" />
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* Add your custom styles here */
+        .form-container {
+            max-width: 350px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            position: absolute;
+            width: 100%;
+            top: 230px;
+            right: 50px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="date"],
+        input[type="number"] {
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #F6CC07;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .number-counter {
+            display: flex;
+            align-items: center;
+        }
+
+        .number-counter button {
+            background-color: #F6CC07;
+            color: #fff;
+            border: none;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .number-counter button:hover {
+            background-color: #555;
+        }
+
+        .number-display {
+            margin: 0 10px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+
+    <style>
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 88px;
+            position: relative;
+        }
+
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .section-container {
+            position: absolute;
+            top: 300px;
+            left: 200px;
+        }
+
+        .section-container h2 {
+            color: #ffffff;
+            font-size: 50px;
+        }
+
+        .section-container p {
+            color: #ffffff;
+            font-size: 40px;
+            padding: 20px 0px;
+            padding-bottom: 30px;
+        }
+
+        #front-btn {
+            margin-left: 40px;
+        }
+
+        .container-fluid {
+            margin-top: 116px;
+        }
+
+        .cards-section-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            gap: 30px;
+
+        }
+
+        .cards-section {
+            box-shadow: 0px 2px 2px 4px #FFCC00;
+            padding: 40px;
+        }
+
+        #about p {
+            font-size: 18px;
+            line-height: 30px;
+            text-align: justify;
+        }
+
+        #about .listarrow li {
+            font-size: 18px;
+            line-height: 40px;
+        }
+
+        div#media\ service-box {
+            margin-bottom: 15px;
+            padding: 18px;
+            padding-left: 91px;
+            position: relative;
+            /* background: #F2F2F2; */
+            color: #000000;
+            box-shadow: 0px 0px 2px 2px #FFCC00;
+            border-radius: 10px;
+
+
+        }
+
+
+        @media (min-width:320px) and (max-width:768px) {
+            .cards-section-about {
+                flex-flow: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/updated-images/aundh-retreat-logo-2.png"
+                            alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll"><a href="index.html">Home</a></li>
+                        <li class="scroll"><a href="about-us.html">About Us</a></li>
+                        <li class="scroll active"><a href="service.html">Services</a></li>
+                        <li class="scroll"><a href="gallery.html">Gallery</a></li>
+                        <li class="scroll"><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+    <div class="container-fluid page-header mb-5 p-0"
+        style="background-image: url(images/updated-images/slider-image-3.jpg);">
+        <div class="container-fluid page-header-inner py-5">
+            <div class="container text-center pb-5">
+                <h1 class="display-3 text-white mb-3 animated slideInDown" style="color: #ffffff;">Services</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="#" style="color: #333;font-weight: 900;">Home</a></li>
+
+                        <li class="breadcrumb-item text-white active" aria-current="page"
+                            style="color: #000;font-weight: 900;">Services</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section id="services" style="background-color: #ffffff;">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown animated"
+                    style="visibility: visible; animation-name: fadeInDown;">Our Services</h2>
+                <p class="wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Praesent eget risus
+                    vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="0ms"
+                        style="visibility: visible; animation-duration: 300ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fas fa-utensils" style="color: #000;"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Restaurant</h4>
+                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform
+                                    that fosters greater</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms"
+                        data-wow-delay="100ms"
+                        style="visibility: visible; animation-duration: 300ms; animation-delay: 100ms; animation-name: fadeInUp;">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-bed" style="color: #000;"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Luxurious Rooms</h4>
+                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform
+                                    that fosters greater</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms"
+                        data-wow-delay="200ms"
+                        style="visibility: visible; animation-duration: 300ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-glass" style="color: #000;"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Banquet </h4>
+                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod
+                                    massa, eu eleifend ipsum.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms"
+                        data-wow-delay="300ms"
+                        style="visibility: visible; animation-duration: 300ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-wifi" style="color: #000;"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Wi-Fi Internet</h4>
+                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod
+                                    massa, eu eleifend ipsum.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms"
+                        data-wow-delay="400ms"
+                        style="visibility: visible; animation-duration: 300ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-clock-o" style="color: #000;"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">24/7 Service</h4>
+                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod
+                                    massa, eu eleifend ipsum.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms"
+                        data-wow-delay="500ms"
+                        style="visibility: visible; animation-duration: 300ms; animation-delay: 500ms; animation-name: fadeInUp;">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-coffee" style="color: #000;"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Room Service</h4>
+                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod
+                                    massa, eu eleifend ipsum.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div>
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section>
+    <div class="cards-section-about" style="margin-top: -50px;">
+        <div class="cards-section" style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0, 0, 0, 0.9);">
+            <h2 class="text-center">STAFF</h2>
+            <p style="font-size: 18px;font-weight: 600;">FOR 2 SHIFTS (12 HOURS PER SHIFT)</p>
+            <div id="media service-box">
+                <div class="pull-left">
+                    <i class="fa fa-user-tie" style="color: #000;"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">GENERAL MANAGER -(1 MEMBER)</h4>
+                </div>
+            </div>
+            <div id="media service-box">
+                <div class="pull-left">
+                    <i class="fa fa-phone-alt icon" style="color: #000;"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">RECEPTIONIST - (3 MEMBERS)</h4>
+                </div>
+            </div>
+            <div id="media service-box">
+                <div class="pull-left">
+                    <i class="fa fa-broom icon" style="color: #000;"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">HOUSEKEEPING- (4 MEMBERS)</h4>
+                </div>
+            </div>
+            <div id="media service-box">
+                <div class="pull-left">
+                    <i class="fa fa-utensils icon" style="color: #000;"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">WAITERS - (2 MEMBER)</h4>
+                </div>
+            </div>
+            <div id="media service-box">
+                <div class="pull-left">
+                    <i class="fa fa-bullseye" style="color: #000;"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">SECURITY GUARD- (1 MEMBER )</h4>
+                </div>
+            </div>
+
+        </div>
+        <div class="cards-section" style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0, 0, 0, 0.9);">
+            <h2 class="text-center">FACILITIES</h2>
+            <p style="font-size: 18px;font-weight: 600;">Indulge in the array of delightful amenities awaiting you at
+                our hotel</p>
+            <div id="media service-box">
+                <div class="pull-left">
+                    <i class="fas fa-clock icon" style="color: #000;"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">CHECK IN- 11AM</h4>
+                </div>
+            </div>
+            <div id="media service-box">
+                <div class="pull-left">
+
+                    <i class="fas fa-egg icon" style="color: #000;"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">COMPLIMENTARY BREAKFAST INCLUDED.</h4>
+                </div>
+            </div>
+            <div id="media service-box">
+                <div class="pull-left">
+                    <i class="fas fa-mug-hot icon" style="color: #000;"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">ALL KIND OF BEVERAGES</h4>
+                </div>
+            </div>
+            <div id="media service-box">
+                <div class="pull-left">
+                    <i class="fas fa-utensils icon" style="color: #000;"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">PANTRY RESTAURANT</h4>
+                </div>
+            </div>
+
+            <div id="media service-box">
+                <div class="pull-left">
+                    <i class="fas fa-clock icon" style="color: #000;"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">CHECK OUT-11 AM(NEXT DAY)</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- First Section: Address, Contact, and Social Media Icons -->
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p style="width: 100%;max-width: 300px;">DP Rd, behind Kaka Halwai Sweet Mart, next to Lifeline
+                        Hospital, Parihar Chawk, Aundh, Pune,
+                        Maharashtra 411007</p>
+                    <p>Email: info@example.com</p>
+                    <div class="social-icons">
+                        <!-- Add your social media icons here -->
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <!-- Add more social media icons as needed -->
+                    </div>
+                </div>
+
+                <!-- Second Section: Useful Links -->
+                <div class="col-md-4">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="index.html" style="color: #ffffff;">Home</a></li>
+                        <li><a href="about-us.html" style="color: #ffffff;">About Us</a></li>
+                        <li><a href="service.html" style="color: #ffffff;">Services</a></li>
+                        <li><a href="gallery.html" style="color: #ffffff;">Gallery</a></li>
+                        <li><a href="contact-us.html" style="color: #ffffff;">Contact Us</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+
+                <!-- Third Section: Map -->
+                <div class="col-md-4">
+                    <h3>Location</h3>
+                    <!-- Embed your map here, using iframe or other appropriate method -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.3116258059104!2d73.80353547514419!3d18.55998436796919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2ff8a06d03%3A0x1d11fa71ca8f5ce8!2sHotel%20Aundh%20Retreat!5e0!3m2!1sen!2sin!4v1712407674877!5m2!1sen!2sin"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slitslider.js"></script>
+    <script type="text/javascript" src="js/slitslider-custom.js"></script>
+    <script src="js/custom-scripts.js"></script>
+    <script>
+        const carouselSlide = document.querySelector('.carousel-slide');
+        const images = document.querySelectorAll('.carousel-slide img');
+
+        let counter = 0; // Starting from the first image
+        const size = images[0].clientWidth;
+
+        function nextSlide() {
+            if (counter >= images.length - 1) {
+                counter = 0; // Reset counter to loop back to the first image
+                carouselSlide.style.transition = 'none'; // Disable transition for seamless loop
+            } else {
+                counter++;
+                carouselSlide.style.transition = 'transform 0.5s ease-in-out';
+            }
+            carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+        }
+
+        setInterval(nextSlide, 2000); // Adjusted interval to 2 seconds (2000 milliseconds)
+    </script>
+    <script>
+        function openCalendar(inputId) {
+            // Get the input element by ID
+            var input = document.getElementById(inputId);
+            // Open the calendar for the input element
+            input.click();
+        }
+
+        function incrementRoom() {
+            var roomCount = document.getElementById("roomCount");
+            roomCount.textContent = parseInt(roomCount.textContent) + 1;
+        }
+
+        function decrementRoom() {
+            var roomCount = document.getElementById("roomCount");
+            var count = parseInt(roomCount.textContent);
+            if (count > 1) {
+                roomCount.textContent = count - 1;
+            }
+        }
+    </script>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+
+</html>

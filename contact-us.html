@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
+    <title>Golden-Hotel-Free-HTML5-Bootstrap-Web-Template</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/slider-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider-custom.css" />
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* Add your custom styles here */
+        .form-container {
+            max-width: 350px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            position: absolute;
+            width: 100%;
+            top: 230px;
+            right: 50px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="date"],
+        input[type="number"] {
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #F6CC07;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .number-counter {
+            display: flex;
+            align-items: center;
+        }
+
+        .number-counter button {
+            background-color: #F6CC07;
+            color: #fff;
+            border: none;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .number-counter button:hover {
+            background-color: #555;
+        }
+
+        .number-display {
+            margin: 0 10px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+
+    <style>
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 88px;
+            position: relative;
+        }
+
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .section-container {
+            position: absolute;
+            top: 300px;
+            left: 200px;
+        }
+
+        .section-container h2 {
+            color: #ffffff;
+            font-size: 50px;
+        }
+
+        .section-container p {
+            color: #ffffff;
+            font-size: 40px;
+            padding: 20px 0px;
+            padding-bottom: 30px;
+        }
+
+        #front-btn {
+            margin-left: 40px;
+        }
+
+        .container-fluid {
+            margin-top: 116px;
+        }
+
+        .cards-section-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            gap: 30px;
+
+        }
+
+        .cards-section {
+            box-shadow: 0px 2px 2px 4px #FFCC00;
+            padding: 40px;
+        }
+
+        #about p {
+            font-size: 18px;
+            line-height: 30px;
+            text-align: justify;
+        }
+
+        #about .listarrow li {
+            font-size: 18px;
+            line-height: 40px;
+        }
+
+        .locations {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: wrap;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .location-nearby {
+            background-color: #fccb08;
+            padding: 20px;
+        }
+
+        @media (min-width:320px) and (max-width:768px) {
+            .cards-section-about {
+                flex-flow: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/updated-images/aundh-retreat-logo-2.png"
+                            alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll"><a href="index.html">Home</a></li>
+                        <li class="scroll"><a href="about-us.html">About Us</a></li>
+                        <li class="scroll"><a href="service.html">Services</a></li>
+                        <li class="scroll"><a href="gallery.html">Gallery</a></li>
+                        <li class="scroll active"><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+    <div class="container-fluid page-header mb-5 p-0"
+        style="background-image: url(images/updated-images/slider-image-3.jpg);">
+        <div class="container-fluid page-header-inner py-5">
+            <div class="container text-center pb-5">
+                <h1 class="display-3 text-white mb-3 animated slideInDown" style="color: #ffffff;">Contact Us</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="#" style="color: #333;font-weight: 900;">Home</a></li>
+
+                        <li class="breadcrumb-item text-white active" aria-current="page"
+                            style="color: #000;font-weight: 900;">Contact Us</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s"
+                style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+
+                <h1 class="mb-5"><span class=" text-uppercase">Contact - </span> For Any Query</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-12"
+                    style="width: 100%;max-width: 1100px;margin: auto;text-align: center;padding: 30px 0px;">
+                    <div class="row gy-4">
+                        <div class="col-md-4">
+                            <h6 class="section-title text-start text-uppercase">Email Id</h6>
+                            <p><i class="fas fa-envelope"
+                                    style="font-size: 20px;color: #000;margin: 0px 8px;"></i>book@example.com</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="section-title text-start text-uppercase">Phone No</h6>
+                            <p><i class="fas fa-phone" style="font-size: 20px;color: #000;margin: 0px 8px;"
+                                    v></i>1234567890</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="section-title text-start text-uppercase">Tel No</h6>
+                            <p><i class="fas fa-phone-alt"
+                                    style="font-size: 20px;color: #000;margin: 0px 8px;"></i>1234567890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s"
+                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.3117381363327!2d73.80611039999997!3d18.559979300000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2ff8a06d03%3A0x1d11fa71ca8f5ce8!2sHotel%20Aundh%20Retreat!5e0!3m2!1sen!2sin!4v1712295554392!5m2!1sen!2sin"
+                        width="100%" height="370" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <div class="wow fadeInUp" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            style="height: 150px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn w-100 py-3" type="submit"
+                                        style="background-color: #FFCC00; color: #000;font-weight: 600;border-radius: 10px;padding: 20px 40px;">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="text-center wow fadeInUp animated" data-wow-delay="0.1s"
+        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+
+        <h1 class="mb-5"><span class=" text-uppercase">Find Our - </span> Nearby Locations</h1>
+    </div>
+    <div class="locations">
+        <div class="location-nearby">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.3108670597676!2d73.8064564!3d18.5600186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf300f683ad1%3A0x8443d8e6d350f33!2sDr.%20Kishore%20Pandit%20LIFELINE%20HOSPITAL!5e0!3m2!1sen!2sin!4v1712737556507!5m2!1sen!2sin"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4 class="text-center">Dr. Kishore Pandit LIFELINE HOSPITAL</h4>
+        </div>
+        <div class="location-nearby">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2751347634457!2d73.80700244999998!3d18.56163065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3022261983%3A0xfd6f78eab06f617e!2sWESTEND%20MALL%2C%20Harmony%20Society%2C%20Ward%20No.%208%2C%20Wireless%20Colony%2C%20Aundh%2C%20Pune%2C%20Maharashtra%20411007!5e0!3m2!1sen!2sin!4v1712737602591!5m2!1sen!2sin"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4 class="text-center">WESTEND MALL</h4>
+        </div>
+        <div class="location-nearby">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.3077927880495!2d73.8052354!3d18.5601573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2ff3d8438b%3A0x5f40cbe761e74f72!2sSaishree%20Hospital!5e0!3m2!1sen!2sin!4v1712737628386!5m2!1sen!2sin"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4 class="text-center">Saishree Hospital</h4>
+        </div>
+        <div class="location-nearby">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.1995119793964!2d73.80228629999999!3d18.565041900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf316776d8e5%3A0x886b06fb69ceec6a!2sMedipoint%20tea!5e0!3m2!1sen!2sin!4v1712737656343!5m2!1sen!2sin"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4 class="text-center">Medipoint tea</h4>
+        </div>
+        <div class="location-nearby">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2337198564596!2d73.8072122!3d18.5634989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf1940cef409%3A0x2f54bb3874464983!2sReliance%20Mall!5e0!3m2!1sen!2sin!4v1712737684937!5m2!1sen!2sin"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4 class="text-center">Reliance Mall</h4>
+        </div>
+        <div class="location-nearby">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2978139970505!2d73.8092435!3d18.5606075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf307ea957bd%3A0x981c13e6518c2913!2sParihar%20Chowk%2C%20Sanghvi%20Nagar%2C%20Ward%20No.%208%2C%20Aundh%20Gaon%2C%20Aundh%2C%20Pune%2C%20Maharashtra%20411007!5e0!3m2!1sen!2sin!4v1712737708384!5m2!1sen!2sin"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h4 class="text-center">Parihar Chowk</h4>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- First Section: Address, Contact, and Social Media Icons -->
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p style="width: 100%;max-width: 300px;">DP Rd, behind Kaka Halwai Sweet Mart, next to Lifeline
+                        Hospital, Parihar Chawk, Aundh, Pune,
+                        Maharashtra 411007</p>
+                    <p>Email: info@example.com</p>
+                    <div class="social-icons">
+                        <!-- Add your social media icons here -->
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <!-- Add more social media icons as needed -->
+                    </div>
+                </div>
+
+                <!-- Second Section: Useful Links -->
+                <div class="col-md-4">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="index.html" style="color: #ffffff;">Home</a></li>
+                        <li><a href="about-us.html" style="color: #ffffff;">About Us</a></li>
+                        <li><a href="service.html" style="color: #ffffff;">Services</a></li>
+                        <li><a href="gallery.html" style="color: #ffffff;">Gallery</a></li>
+                        <li><a href="contact-us.html" style="color: #ffffff;">Contact Us</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
+                </div>
+
+                <!-- Third Section: Map -->
+                <div class="col-md-4">
+                    <h3>Location</h3>
+                    <!-- Embed your map here, using iframe or other appropriate method -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.3116258059104!2d73.80353547514419!3d18.55998436796919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2ff8a06d03%3A0x1d11fa71ca8f5ce8!2sHotel%20Aundh%20Retreat!5e0!3m2!1sen!2sin!4v1712407674877!5m2!1sen!2sin"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slitslider.js"></script>
+    <script type="text/javascript" src="js/slitslider-custom.js"></script>
+    <script src="js/custom-scripts.js"></script>
+    <script>
+        const carouselSlide = document.querySelector('.carousel-slide');
+        const images = document.querySelectorAll('.carousel-slide img');
+
+        let counter = 0; // Starting from the first image
+        const size = images[0].clientWidth;
+
+        function nextSlide() {
+            if (counter >= images.length - 1) {
+                counter = 0; // Reset counter to loop back to the first image
+                carouselSlide.style.transition = 'none'; // Disable transition for seamless loop
+            } else {
+                counter++;
+                carouselSlide.style.transition = 'transform 0.5s ease-in-out';
+            }
+            carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+        }
+
+        setInterval(nextSlide, 2000); // Adjusted interval to 2 seconds (2000 milliseconds)
+    </script>
+    <script>
+        function openCalendar(inputId) {
+            // Get the input element by ID
+            var input = document.getElementById(inputId);
+            // Open the calendar for the input element
+            input.click();
+        }
+
+        function incrementRoom() {
+            var roomCount = document.getElementById("roomCount");
+            roomCount.textContent = parseInt(roomCount.textContent) + 1;
+        }
+
+        function decrementRoom() {
+            var roomCount = document.getElementById("roomCount");
+            var count = parseInt(roomCount.textContent);
+            if (count > 1) {
+                roomCount.textContent = count - 1;
+            }
+        }
+    </script>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+
+</html>
